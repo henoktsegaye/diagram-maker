@@ -219,7 +219,7 @@ function Flow({ width, height }: Props) {
   return (
     <div className=" w-screen h-screen" ref={containerRef}>
       <ReactFlow
-        onNodeClick={(event, node) => {
+        onNodeClick={(_, node) => {
           setSelectedEdgeId("");
           setSelectedNodeId(node.id);
         }}
@@ -227,7 +227,7 @@ function Flow({ width, height }: Props) {
         nodes={nodesWithActive}
         edges={edgeWithActive}
         onNodesChange={onNodesChange}
-        onEdgeClick={(event, edge) => {
+        onEdgeClick={(_, edge) => {
           setSelectedNodeId("");
           setSelectedEdgeId(edge.id);
         }}
