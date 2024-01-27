@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Handle, Position } from "reactflow";
-import { Values } from "./GenericBox";
+import { Values } from "./Flow";
 const handleSourceStyle = {
   left: 100,
   backgroundColor: "red",

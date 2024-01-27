@@ -1,7 +1,13 @@
-import { Flow } from "./chart/GenericBox";
+import { Flow } from "./chart/Flow";
+import "@blocknote/core/style.css";
+import { HideDotsProvider } from "./contexts/hideDots";
 
 function App() {
-  return <Flow width={window.innerWidth} height={window.innerHeight} />;
+  return (
+    <HideDotsProvider>
+      <Flow width={window.innerWidth} height={window.innerHeight} />
+    </HideDotsProvider>
+  );
 }
 
 export default App;

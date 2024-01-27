@@ -1,6 +1,6 @@
 // pages/index.tsx
 import { useEffect, useState } from "react";
-import { Flow } from "./chart/GenericBox";
+import { Flow } from "./chart/Flow";
 
 const useWindowSize = () => {
   const [size, setSize] = useState([0, 0]);
